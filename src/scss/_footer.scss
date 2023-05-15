@@ -1,0 +1,147 @@
+// Footer
+footer {
+    display: block;
+    background: $primary;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @media (max-width: $breakpoint768) {
+        padding: 35px 0;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+}
+.footer__item {
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $breakpoint768) {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+.footer__logo {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.footer__text {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.footer__copy {
+    margin-top: auto;
+    max-width: 168px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #D6D5DF;
+    line-height: 120%;
+    @media (max-width: $breakpoint768) {
+        margin-top: 10px;
+    }
+}
+.footer__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    @media (max-width: $breakpoint768) {
+        margin-top: 20px;
+    }
+}
+.form__label {
+    margin-top: 12px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+}
+.footer__input {
+    padding: 20px 60px 20px 20px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    &:focus {
+        outline: 1px solid $neutral;
+    }
+}
+.footer__btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    background: $neutral;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background: $neutralDark;
+        transition: .3s all ease;
+    }
+}
+.form__text {
+    margin-top: 10px;
+    max-width: 345px;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.footer__social {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint768) {
+        gap: 10px;
+    }
+}
+.footer__social-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer__link {
+    display: flex;
+    &:hover {
+        fill: #4e7bed;
+    }
+}
+
+.social__path {
+    &:hover {
+        fill: #4e7bed;
+        transition: .2s all ease;
+    }
+}
+
+.social__path-youtube {
+    &:hover {
+        fill: red;
+        transition: .2s all ease;
+    }
+}
+
